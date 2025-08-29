@@ -2,7 +2,9 @@
 name = "graph-topper"
 version = "0.1.0"
 description = "`graph-topper` is a small extension to the `lang-graph` library that allows for graph definitions via decorators, bringing flow-control and logic to one place."
-authors = ["Jens Kaiser"]
+authors = [
+    {name = "Jens Kaiser", email = "jens-kaiser@online.de"},
+]
 requires-python = ">=3.9"
 readme = "README.md"
 license = "MIT"
