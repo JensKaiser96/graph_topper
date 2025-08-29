@@ -1,5 +1,3 @@
-from graph_topper.topper import Topper
-
 # graph_topper
 
 [![PyPI - Version](https://img.shields.io/pypi/v/graph_topper)](https://pypi.org/project/graph_topper/)
@@ -17,7 +15,7 @@ tests, docs and a pypi release.
 - Stops circular references in the graph via native python syntax (node directionality is implied by the order in which
 the methods are defined)
 - More compact graph definition (define node and incoming edges in one line)
-- Avoids error prone string references (by using method names by default)
+- Avoids error-prone string references (by using method names by default)
 - Retails all functionality of `lang-graph`
  
 ---
