@@ -1,0 +1,17 @@
+[project]
+name = "graph-topper"
+version = "0.1.0"
+description = "`graph-topper` is a small extension to the `lang-graph` library that allows for graph definitions via decorators, bringing flow-control and logic to one place."
+authors = ["Jens Kaiser"]
+requires-python = ">=3.9"
+readme = "README.md"
+license = "MIT"
+license-files = ['LICENSE']
+dependencies = [
+    "langgraph>=0.1.2",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+]
