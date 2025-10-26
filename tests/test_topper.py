@@ -90,16 +90,14 @@ def test_named_nodes(graph):
     @graph.node(dependencies=["node-1"])
     def node2(): ...
 
-    actual_nodes = graph.graph.nodes
+    actual_nodes = graph.graph.nodes.keys()
     expected_nodes = {"node-1", "node2"}
     assert actual_nodes == expected_nodes
 
     actual_edges = graph.graph.edges
     expected_edges = {
-        (START, "node1"),
-        ("node1", "node2"),
-        ("node2", "node3"),
-        ("node1", "node3"),
+        (START, "node-1"),
+        ("node-1", "node2"),
     }
 
     assert actual_edges == expected_edges
